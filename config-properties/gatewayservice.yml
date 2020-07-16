@@ -14,9 +14,9 @@ spring:
           enabled: true
       routes:
         - id: clientservice
-          uri: lb://apiclient
+          uri: lb://clientservice
           predicates:
-            - Path=/client/**
+            - Path=/apiclient/**
         - id: productservice
           uri: lb://productservice
           predicates:
