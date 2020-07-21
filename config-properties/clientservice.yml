@@ -4,7 +4,7 @@ server:
 spring:
   data:
       mongodb:
-        uri: mongodb://localhost:27017/client
+        uri: mongodb://localhost:27017/Client
 eureka:
   client:
     serviceUrl:
