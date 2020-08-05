@@ -17,4 +17,3 @@ spring:
           uri: lb://clientservice
           predicates:
             - Path=/apiclient/**
-            
