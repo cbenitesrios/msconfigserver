@@ -16,6 +16,5 @@ spring:
         - id: clientservice
           uri: lb://clientservice
           predicates:
-            - Path=/apiclient/**           
-            
+            - Path=/apiclient/**
             
