@@ -17,3 +17,9 @@ spring:
           uri: lb://clientservice
           predicates:
             - Path=/apiclient/**
+        - id: productservice
+          uri: lb://productservice
+          predicates:
+            - Path=/apicredit/**
+            - Path=/apiaccount/**
+            - Path=/apiprodreport/**
