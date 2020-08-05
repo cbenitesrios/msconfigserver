@@ -20,6 +20,4 @@ spring:
         - id: productservice
           uri: lb://productservice
           predicates:
-          - Path=/apicredit/**
-          - Path=/apiaccount/**
-          - Path=/apiprodreport/**
+          - Path=/apicredit/**,/apiaccount/**,/apiprodreport/**
