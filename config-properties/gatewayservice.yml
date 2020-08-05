@@ -21,3 +21,11 @@ spring:
           uri: lb://productservice
           predicates:
           - Path=/apicredit/**,/apiaccount/**,/apiprodreport/**
+        - id: atmservice
+          uri: lb://atmservice
+          predicates:
+          - Path=/apiatm/**
+        - id: transactservice
+          uri: lb://transactservice
+          predicates:
+          - Path=/apitransaction/**
