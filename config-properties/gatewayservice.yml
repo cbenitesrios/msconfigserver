@@ -16,20 +16,6 @@ spring:
         - id: clientservice
           uri: lb://clientservice
           predicates:
-            - Path=/apiclient/**
-        - id: productservice
-          uri: lb://productservice
-          predicates: 
-            - Path=/apiprodreport/**
-            - Path=/apiaccount/**
-            - Path=/apicredit/**
-        - id: transactservice
-          uri: lb://transactservice
-          predicates: 
-            - Path=/apitransaction/**
-        - id: atmservice
-          uri: lb://atmservice
-          predicates: 
-            - Path=/apiatm/**            
+            - Path=/apiclient/**           
             
             
