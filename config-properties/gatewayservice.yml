@@ -16,10 +16,10 @@ spring:
         - id: clientservice
           uri: lb://clientservice
           predicates:
-            - Path=/apiclient/**
+          - Path=/apiclient/**
         - id: productservice
           uri: lb://productservice
           predicates:
-            - Path=/apicredit/**
-            - Path=/apiaccount/**
-            - Path=/apiprodreport/**
+          - Path=/apicredit/**
+          - Path=/apiaccount/**
+          - Path=/apiprodreport/**
